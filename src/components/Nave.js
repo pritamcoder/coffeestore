@@ -26,7 +26,7 @@ const Nave = () => {
             <li key={5}><Link href={'/#news'} onClick={() => setactive(5)} className={`${active === 5 ? "text-orange-600" : "text-black"}`}>news</Link></li>
           </ul>
           <div className="flex gap-5 items-center">
-            <Link href={"/cart"}> <i data-content={`${carddata}`} className={`bi bi-cart4 text-2xl text-gray-200 after:content-[attr(data-content)]`}></i></Link>
+            <Link href={"/cart"}> <i data-content={`${carddata}`} className={`bi bi-cart4 text-2xl text-black after:content-[attr(data-content)]`}></i></Link>
             <button className="lg:block md:block hidden w-24 bg-orange-400"><Link href={"/login"}>login</Link></button>
             <div className='md:hidden cursor-pointer' onClick={() => (settoggleulbar(!toggleulbar))}>
               <Image src={"/threeline.svg"} height={30} width={30} alt='three line' />
@@ -42,7 +42,7 @@ const Nave = () => {
             <li key={4}><Link href={'/#meanu'} onClick={() => setactive(4)} className={`${active === 4 ? "text-orange-600" : "text-black"}`}>menu</Link></li>
             <li key={5}><Link href={'/#news'} onClick={() => setactive(5)} className={`${active === 5 ? "text-orange-600" : "text-black"}`}>news</Link></li>
           </ul>
-          <button className="lg:block md:block hidden w-24 bg-orange-400"><Link href={"/login"}>login</Link></button>
+          <button className=" w-24 bg-orange-400"><Link href={"/login"}>login</Link></button>
         </div>
 
       </div>
