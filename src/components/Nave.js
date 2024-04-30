@@ -22,7 +22,7 @@ const Nave = () => {
             <li key={1}><Link href={'/#home'} onClick={() => setactive(1)} className={` ${active === 1 ? "text-orange-600" : "text-black"}`}>home</Link></li>
             <li key={2}><Link href={'/#about'} onClick={() => setactive(2)} className={`${active === 2 ? "text-orange-600" : "text-black"}`}>about</Link></li>
             <li key={3}><Link href={'/#coffee'} onClick={() => setactive(3)} className={`${active === 3 ? "text-orange-600" : "text-black"}`}>coffee</Link></li>
-            <li key={4}><Link href={'/#meanu'} onClick={() => setactive(4)} className={`${active === 4 ? "text-orange-600" : "text-black"}`}>menu</Link></li>
+            <li key={4}><Link href={'/#menu'} onClick={() => setactive(4)} className={`${active === 4 ? "text-orange-600" : "text-black"}`}>menu</Link></li>
             <li key={5}><Link href={'/#news'} onClick={() => setactive(5)} className={`${active === 5 ? "text-orange-600" : "text-black"}`}>news</Link></li>
           </ul>
           <div className="flex gap-5 items-center">

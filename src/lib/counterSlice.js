@@ -17,8 +17,10 @@ export const counterSlice = createSlice({
      
     },
     removeid: (state,action) => {
+      state.value-=1
      const removei=state.id.filter((item)=>item.id!=action.payload)
      state.id=removei
+     
     
     },
 

@@ -55,7 +55,7 @@ const page = () => {
 
           <div className="flex gap-5 md:flex-row flex-col text-center md:text-left items-center  mt-5">
             <div className="md:w-[50%] w-full">
-              <Image src={"/mainbody/aboutimage.png"} width={500} height={600} alt='about image' className="rounded-xl"/>
+              <Image src={"/mainbody/aboutimage.png"} width={500} height={600} alt='about image' className="rounded-xl" />
             </div>
             <div className="md:w-[50%] w-full">
               <h1>best coffee fouse in your home town</h1>
@@ -74,21 +74,26 @@ const page = () => {
 
         </div>
 
-        <div className="md:pl-12 pl-5 md:pr-12 pr-5 pt-10 pb-10 bg-black" id='meanu'>
+        <div className="md:pl-12 pl-5 md:pr-12 pr-5 pt-10 pb-10 bg-black" id='menu'>
           <h1 className="text-white mb-10 text-center">our other breakfast item</h1>
           <Manuitem />
         </div>
 
-        <div className='lg:h-screen h-[50vh] paddingall pt-10 pb-10 bg-black' id='news'>
-          <div className="bg-white flex flex-col lg:items-end items-center h-full rounded-xl justify-center lg:pr-20">
-            <h1 className="text-center">subscribe to get <br /> news</h1>
-            <form className='flex items-center mt-10' onSubmit={(e) => { e.preventDefault() }}>
-              <input type='email' placeholder='enter your email' required value={inputvalue} onChange={(e) => {
-                setinputvalue(e.target.value)
-              }} className='bg-black text-white h-10 md:w-72 w-40 rounded-xl rounded-r-none pl-4 ' />
+        <div className='lg:h-screen  paddingall pt-10 pb-10 bg-black' id='news'>
 
-              <button className='h-10 md:w-[122px] w-20 rounded-l-none '>subscribe</button>
-            </form>
+          <div className=" bg-white md:flex-row flex-col flex justify-around items-center h-full rounded-xl pb-10">
+            
+            <Image src={"/mainbody/coffeebeencontact.png"} width={400} height={400} />
+            <div className='flex items-center flex-col'>
+              <h1 className="text-center">subscribe to get <br /> news</h1>
+              <form className='flex items-center mt-10' onSubmit={(e) => { e.preventDefault() }}>
+                <input type='email' placeholder='enter your email' required value={inputvalue} onChange={(e) => {
+                  setinputvalue(e.target.value)
+                }} className='bg-black text-white h-10 md:w-72 w-40 rounded-xl rounded-r-none pl-4 ' />
+
+                <button className='h-10 md:w-[122px] w-20 rounded-l-none '>subscribe</button>
+              </form>
+            </div>
           </div>
 
         </div>
